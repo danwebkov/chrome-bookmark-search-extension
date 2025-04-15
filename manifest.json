@@ -1,0 +1,27 @@
+{
+  "name": "Bookmarks",
+  "description": "Bookmarks",
+  "homepage_url": "https://github.com/llagerlof/fresh-chrome-extension",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "background": {
+    "service_worker": "/background.js"
+  },
+  "action": {
+    "default_title": "Bookmarks",
+    "default_icon": {
+      "128": "assets/icons/icon.png"
+    }
+  },
+  "icons": {
+      "128": "assets/icons/icon.png"
+  },
+  "permissions": [
+    "tabs",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://*/*",
+    "http://*/*"
+  ]
+}
